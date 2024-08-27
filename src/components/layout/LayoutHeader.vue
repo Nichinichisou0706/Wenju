@@ -18,6 +18,10 @@ export default {
     }
   }
 }
+
+const onClick = ({key}) => {
+
+}
 </script>
 
 <template>
@@ -53,6 +57,27 @@ export default {
           <router-link :to="{name: 'Rewards'}">积分</router-link>
         </a-menu-item>
       </a-menu>
+    </a-col> 
+    <a-col :span="2">
+      <a-dropdown>
+        <a href="#" @click.prevent>
+          地区选择
+          <DownOutlined />
+        </a>
+        <template #overlay>
+          <a-menu @click="onClick">            
+            <a-menu-item key="k1">
+              <a href="#">方言一</a>
+            </a-menu-item>
+            <a-menu-item key="k2">
+              <a href="#">方言二</a>
+            </a-menu-item>
+            <a-menu-item key="k3">
+              <a href="#">方言三</a>
+            </a-menu-item>
+          </a-menu>
+        </template>
+      </a-dropdown>
     </a-col>
     <a-col>
       <div class="user">
