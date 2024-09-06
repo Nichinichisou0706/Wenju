@@ -17,7 +17,7 @@
         style="padding: 12px 0;"
         type="flex"
       >
-        <a-card hoverable style="text-align: center;">
+        <a-card hoverable style="text-align: center;width:80%;max-width: 600px;">
           <div style="text-align: right">
             <a-button
               icon="more"
